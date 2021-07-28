@@ -25,6 +25,27 @@ public class GroupProjectMain{
         if (customerOrder.equalsIgnoreCase("factory")){
             System.out.println("You have chosen the factory pattern.");
             //Include the code here to call the factory pattern
+
+        DishFactory DishFactory = new DishFactory();
+
+      //get an object of Appetizer and call its makeTheFood method.
+      Dish dish1 = DishFactory.getDish("APPETIZER");
+
+      //call makeTheFood method of Appetizer
+      dish1.makeTheFood();
+
+      //get an object of Entree and call its makeTheFood method.
+      Dish dish2 = DishFactory.getDish("ENTREE");
+
+      //call makeTheFood method of Entree
+      dish2.makeTheFood();
+
+      //get an object of Dessert and call its makeTheFood method.
+      Dish dish3 = DishFactory.getDish("DESSERT");
+
+      //call makeTheFood method of Dessert
+      dish3.makeTheFood();
+
         }
 
     }
