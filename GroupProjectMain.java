@@ -2,7 +2,7 @@
 /**
  * @Description This is the main method of our group project. Inside of it you will be able to call whichever design pattern you want to test.
  * 
- * @Authors Ben Kluger, (Please add your names to this list, or DM me your name and I will add you)
+ * @Authors Ben Kluger, Eyal Dalal, (Please add your names to this list, or DM me your name and I will add you)
  * 
  */
 
