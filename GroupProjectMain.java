@@ -22,6 +22,8 @@ public class GroupProjectMain{
 
         String customerOrder = JOptionPane.showInputDialog("Please enter the design pattern that you want to test. The choices are: Factory, ");
 
+
+        //Factory by Ben
         if (customerOrder.equalsIgnoreCase("factory")){
             System.out.println("You have chosen the factory pattern.");
             //Include the code here to call the factory pattern
@@ -48,7 +50,21 @@ public class GroupProjectMain{
 
         }
 
+        //Singleton by Momina
+        else if (customerOrder.equalsIgnoreCase("singleton")){
+            System.out.println("You have chosen the singleton pattern.");
+            //include your driver code
+        
     }
+
+     //Singleton by Syed
+     else if (customerOrder.equalsIgnoreCase("decorator")){
+        System.out.println("You have chosen the decorator pattern.");
+        //include your driver code
+     }
+
+
+}
 
 
     
