@@ -5,4 +5,6 @@ public interface State {
     public void askForBill(Patron patron);
     public void payBill(Patron patron, double payment);
     public void leave(Patron patron);
+
+    public String toString();
 }

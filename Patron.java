@@ -82,7 +82,14 @@ public class Patron {
         return balance;
     }
 
+    //adjust balance when making payments and orders
     public void adjustBalance(double val) {
         balance += val;
+    }
+
+    //toString to print balance and current state
+    public String toString() {
+        String result = "Patron info:\nCurrent balance: $" + balance + "\nCurrent state: " + state.toString();
+        return result;
     }
 }

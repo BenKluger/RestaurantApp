@@ -38,9 +38,12 @@ public class BillPrintedState implements State{
         double currentBal = patron.getBalance();
         if (currentBal > 0)
             System.out.println("Your remaining balance is $" + currentBal + ".");
-        else if (currentBal == 0)
+        else if (currentBal == 0) {
+            patron.adjustBalance(-1 * patron.getBalance());
             patron.setState(patron.getPaidState());
+        }
         else {
+            patron.adjustBalance(-1 * patron.getBalance());
             System.out.println("Thank you for your generous tip.");
             patron.setState(patron.getPaidState());
         }
@@ -50,5 +53,10 @@ public class BillPrintedState implements State{
     public void leave(Patron patron) {
         System.out.println("Dine and dash detected. Contacting police and issuing a lifetime ban.");
         patron.setState(patron.getBannedState());
+    }
+
+    @Override
+    public String toString() {
+        return "Patron has a printed bill.";
     }
 }

@@ -40,4 +40,9 @@ public class MadeReservationState implements State {
         System.out.println("Have a good day. Your reservation has been cancelled.");
         patron.setState(patron.getNoReservationState());
     }
+
+    @Override
+    public String toString() {
+        return "Patron has a reservation.";
+    }
 }

@@ -44,4 +44,9 @@ public class PaidState implements State {
         System.out.println("Thank you for dining with us. Come back soon!");
         patron.setState(patron.getNoReservationState());
     }
+
+    @Override
+    public String toString() {
+        return "Patron has paid bill.";
+    }
 }

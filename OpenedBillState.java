@@ -42,4 +42,9 @@ public class OpenedBillState implements State {
         System.out.println("Dine and dash detected. Contacting police and issuing a lifetime ban.");
         patron.setState(patron.getBannedState());
     }
+
+    @Override
+    public String toString() {
+        return "Patron has an open bill.";
+    }
 }

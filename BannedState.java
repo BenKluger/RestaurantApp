@@ -33,6 +33,7 @@ public class BannedState implements State {
     public void payBill(Patron patron, double payment) {
         if (payment > patron.getBalance() * 1.5) {
             System.out.println("Well... we will unban you, just this once.");
+            patron.adjustBalance(-1 * patron.getBalance());
             patron.setState(patron.getNoReservationState());
         }
         else
@@ -42,5 +43,10 @@ public class BannedState implements State {
     @Override
     public void leave(Patron patron) {
         System.out.println("Please do not come back.");
+    }
+
+    @Override
+    public String toString() {
+        return "Patron is banned for life.";
     }
 }

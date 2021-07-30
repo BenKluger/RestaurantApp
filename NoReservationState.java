@@ -39,4 +39,9 @@ public class NoReservationState implements State {
     public void leave(Patron patron) {
         System.out.println("Have a good day.");
     }
+
+    @Override
+    public String toString() {
+        return "Patron has no reservation.";
+    }
 }

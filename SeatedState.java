@@ -43,4 +43,9 @@ public class SeatedState implements State {
         System.out.println("Have a good day. Your table has been given up and your reservation is cancelled.");
         patron.setState(patron.getNoReservationState());
     }
+
+    @Override
+    public String toString() {
+        return "Patron is seated and has not yet ordered.";
+    }
 }
