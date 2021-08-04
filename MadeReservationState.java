@@ -1,3 +1,14 @@
+/**
+ * MadeReservationState:
+ * One of seven concrete States for the State Design Pattern.
+ * This is the state in which a Patron has made a reservation and is ready to be seated. Two State transitions are
+ * possible. The first is triggered by "speaking with the host" (an app functionality that marks arrival at the
+ * restaurant). The second is a reservation cancellation, triggered by leaving (an option on the app as well as a
+ * GPS-triggered event, perhaps).
+ *
+ * @author Eyal Dalal
+ */
+
 public class MadeReservationState implements State {
     private static MadeReservationState uniqueInstance = new MadeReservationState();
 

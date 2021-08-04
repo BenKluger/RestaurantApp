@@ -1,3 +1,13 @@
+/**
+ * OpenedBillState:
+ * One of seven concrete States for the State Design Pattern.
+ * This is the State in which a Patron has an open bill. The Patron may continue placing orders or may choose to ask
+ * for the bill. Requesting the bill is one State transition; choosing to leave at this point leads to another State
+ * transition where the customer is marked as Banned for dining and dashing.
+ *
+ * @author Eyal Dalal
+ */
+
 public class OpenedBillState implements State {
     private static OpenedBillState uniqueInstance = new OpenedBillState();
 

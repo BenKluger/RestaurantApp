@@ -1,3 +1,13 @@
+/**
+ * BannedState:
+ * One of seven concrete States for the State Design Pattern.
+ * This is the State in which a Patron is marked as "banned for life" from the restaurant. This occurs for those
+ * Patrons who choose to leave before completing payment of their bills. There is a possible State transition, though;
+ * if a Patron pays the restaurant 1.5x their previously remaining balance, they are let off the hook "just this once."
+ *
+ * @author Eyal Dalal
+ */
+
 public class BannedState implements State {
     private static BannedState uniqueInstance = new BannedState();
 

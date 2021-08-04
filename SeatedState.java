@@ -1,3 +1,12 @@
+/**
+ * SeatedState:
+ * One of seven concrete States for the State Design Pattern.
+ * The State in which a Patron is seated and ready to order. Two transitions are possible: one by placing an order and
+ * opening a new bill, and one by leaving which cancels the reservation.
+ *
+ * @author Eyal Dalal
+ */
+
 public class SeatedState implements State {
     private static SeatedState uniqueInstance = new SeatedState();
 

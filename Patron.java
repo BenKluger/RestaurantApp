@@ -1,23 +1,36 @@
+/**
+ * Patron Class (Context):
+ * Patron is the Context for the State Design Pattern. Customers logging into the restaurant application can be in
+ * one of several states, depending on if they have a reservation, if they're seated, if they're ordering, if they're
+ * paying, etc. Any action taken by a customer (making reservations, placing orders, paying, leaving, etc.) is handled
+ * by the current state the Patron is in.
+ *
+ * Because there will be many Patrons existing at once, each State is a singleton shared among all Patron instances.
+ * This preserves resources (only seven States are instantiated as opposed to 7n, where n is the number of Patrons).
+ * For this to function, Patron instance is passed as a parameter for each method (rather than in State constructors,
+ * as is the norm for non-Singleton implementation of the State Pattern).
+ *
+ * @author Eyal Dalal
+ */
+
 public class Patron {
-    State noReservationState = NoReservationState.getInstance();
-    State madeReservationState = MadeReservationState.getInstance();
-    State seatedState = SeatedState.getInstance();
-    State openedBillState = OpenedBillState.getInstance();
-    State billPrintedState = BillPrintedState.getInstance();
-    State paidState = PaidState.getInstance();
-    State bannedState = BannedState.getInstance();
+    private State noReservationState = NoReservationState.getInstance();
+    private State madeReservationState = MadeReservationState.getInstance();
+    private State seatedState = SeatedState.getInstance();
+    private State openedBillState = OpenedBillState.getInstance();
+    private State billPrintedState = BillPrintedState.getInstance();
+    private State paidState = PaidState.getInstance();
+    private State bannedState = BannedState.getInstance();
 
-    State state = noReservationState; //initially all patrons will have no reservation
-    double balance = 0;
+    private State state = noReservationState; //initially all patrons will have no reservation
+    private double balance = 0;
 
-    //empty constructor
     public Patron(){
-        //
+        //empty
     }
 
     //six possible actions; make reservation, talk to host, place order, ask for bill, pay bill, and leave
     //each action is delegated to the current state
-    //current Patron instance is passed in these calls rather than state constructors because the states are singletons
     public void makeReservation() {
         state.makeReservation(this);
     }

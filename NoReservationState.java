@@ -1,3 +1,13 @@
+/**
+ * NoReservationState:
+ * One of seven concrete States for the State Design Pattern.
+ * This is the initial State for a Patron, in which no reservation exists. This is also the State in which Patrons who
+ * have completed their previous interactions exist (by paying, if needed, and leaving). One State transition is
+ * possible, triggered by making a reservation.
+ *
+ * @author Eyal Dalal
+ */
+
 public class NoReservationState implements State {
     private static NoReservationState uniqueInstance = new NoReservationState();
 

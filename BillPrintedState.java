@@ -1,3 +1,14 @@
+/**
+ * BillPrintedState:
+ * One of seven concrete States for the State Design Pattern.
+ * This is the State in which the bill has been printed and payment becomes possible. Payment leads to a State
+ * transition only when the balance has been totally covered; any excess payment is considered tip. Leaving at this
+ * point causes a State transition into the BannedState for dining and dashing. The customer also has the option to
+ * reopen their bill by placing a new order.
+ *
+ * @author Eyal Dalal
+ */
+
 public class BillPrintedState implements State{
     private static BillPrintedState uniqueInstance = new BillPrintedState();
 

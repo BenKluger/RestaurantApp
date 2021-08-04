@@ -1,3 +1,13 @@
+/**
+ * PaidState:
+ * One of seven concrete States for the State Design Pattern.
+ * This is the State in which the Patron has fully paid their bill. Reseating is not possible without making a new
+ * reservation, however attempting to place an order while still seated will cause a State transition into opening
+ * a new bill. Another State transition is possible by leaving.
+ *
+ * @author Eyal Dalal
+ */
+
 public class PaidState implements State {
     private static PaidState uniqueInstance = new PaidState();
 
