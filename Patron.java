@@ -40,7 +40,8 @@ public class Patron {
     }
 
     public void placeOrder(double price) {
-        state.placeOrder(this, price);
+        if (price < 0) System.out.println("Price cannot be negative!");
+        else state.placeOrder(this, price);
     }
 
     public void askForBill() {
@@ -48,7 +49,8 @@ public class Patron {
     }
 
     public void payBill(double payment) {
-        state.payBill(this, payment);
+        if (payment < 0) System.out.println("Payment cannot be negative!");
+        else state.payBill(this, payment);
     }
 
     public void leave() {
@@ -104,5 +106,10 @@ public class Patron {
     public String toString() {
         String result = "Patron info:\nCurrent balance: $" + balance + "\nCurrent state: " + state.toString();
         return result;
+    }
+
+    //getState included for unit testing; otherwise, not needed
+    public State getState() {
+        return state;
     }
 }
