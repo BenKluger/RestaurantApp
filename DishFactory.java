@@ -1,3 +1,7 @@
+/**
+ * 
+ */
+
 public class DishFactory {
     //use getDish method to get object of type Dish
    public Dish getDish(String dishType){
