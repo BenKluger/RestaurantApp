@@ -2,7 +2,7 @@
 /**
  * @Description This is the main method of our group project. Inside of it you will be able to call whichever design pattern you want to test.
  *
- * @Authors Ben Kluger, Eyal Dalal, (Please add your names to this list, or DM me your name and I will add you)
+ * @Authors Ben Kluger, Eyal Dalal, Kieun Bae, (Please add your names to this list, or DM me your name and I will add you)
  *
  */
 
@@ -55,6 +55,35 @@ public class GroupProjectMain{
         else if (customerOrder.equalsIgnoreCase("singleton")){
             System.out.println("You have chosen the singleton pattern.");
             //include your driver code
+
+        }
+        
+        //Observer by Kieun
+        else if (customerOrder.equalsIgnoreCase("observer")){
+            System.out.println("You have chosen the observer pattern.");
+        //Driver Code:
+        //check from appetizer, dessert or entree
+        AppetizerObserver appetizer = new AppetizerObserver();
+        DessertObserver dessert = new DessertObserver();
+        EntreeObserver entree = new EntreeObserver();
+        
+        //Observer pattern will work to notify you on the status of the order.
+        FoodOrderNotify mealOrder = new FoodOrderNotify();
+        System.out.println("\nThank you for your order! We have notified the restaurant!");
+
+        //get the status of the orders
+        mealOrder.status(appetizer);
+        mealOrder.status(dessert);
+        mealOrder.status(entree);
+
+        //notify user that the order has been received and the restaurant is making it.
+        mealOrder.notifyUpdate(new foodMessage("Order has been received and is in the works!"));   
+        
+        //update the order
+        System.out.println("\nRestaurant Order Update: ");
+        
+        //notify user that the meal is now ready.
+        mealOrder.notifyUpdate(new foodMessage("Meal is now ready to be served! Enjoy your meal!"));
 
         }
 
