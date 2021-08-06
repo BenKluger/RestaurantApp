@@ -54,7 +54,16 @@ public class GroupProjectMain{
         //Singleton by Momina
         else if (customerOrder.equalsIgnoreCase("singleton")){
             System.out.println("You have chosen the singleton pattern.");
-            //include your driver code
+            SingletonStopwatch stopwatch = SingletonStopwatch.Stopwatch();
+
+            System.out.println("Ordering Items.");
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("Order Ready.");
+            System.out.println(stopwatch.getTime());
 
         }
         
