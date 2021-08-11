@@ -1,3 +1,5 @@
+// This contains all the classes for the dish toppings
+
 class Tofu extends ToppingDecorator {
     ThaiDish tofu;
     public Tofu(ThaiDish tofu) {
