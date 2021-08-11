@@ -2,7 +2,7 @@
 /**
  * @Description This is the main method of our group project. Inside of it you will be able to call whichever design pattern you want to test.
  *
- * @Authors Ben Kluger, Eyal Dalal, Kieun Bae, Syed Hasib, Momina Mim
+ * @Authors Ben Kluger, Eyal Dalal, Kieun Bae, Syed Hasib, Momina Mim, Mohab Taha
  *
  */
 
