@@ -1,5 +1,5 @@
 public interface FoodSubject 
 {
-    public void status(Proxy order);
-    public void notifyTheUpdate(foodMessage foodOrder);
+    public void status(Observer order);
+    public void notifyUpdate(foodMessage fOrder);
 }
