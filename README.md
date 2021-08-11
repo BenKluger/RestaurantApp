@@ -35,28 +35,75 @@ The existing website will be replaced by the new web application. The phoneline-
 Not included in this project is the exact implementation of the web application—that part will need to be extrapolated from the mobile application after its completion, as a separate project.
 
 ###### 1.5 System Purpose
-Users: 
+**Users:** 
 Those who will primarily benefit from the new system and those who will be affected by the new system include
 
-Customers:
+**Customers:**
 	
 Upon implementation of the new system, customers will find app navigation, product identification (which meal they want) and product ordering easier. Customers will be able to choose what toppings they want as well.
 
-Hosts:
+**Hosts:**
 
 The hosts will have the ability to view their customer’s orders as well as their position in the ordering process.
 
-Wait Staff:
+**Wait Staff:**
 
 Wait staff will not be spread so thin, as customers will now have the option to order via application as well. Sending orders to the kitchen will also become a more streamlined operation in which less errors will arise. 
 
-Kitchen Staff:
+**Kitchen Staff:**
 
 The new system should reduce the workload of the kitchen staff as kitchen staff members are able to find the information they need from the application. The staff will be better able to send out their dishes on time, accordingly. 
 
-Shareholders:
+**Shareholders:**
 
 Shareholders will benefit from reduced expenditures and losses.
+
+
+
+###### 1.6 Definitions and Acronyms
+**MRH:**
+
+Molly’s Restaurant Hub; the mobile application being developed.
+
+**Molly’s Restaurant:**
+
+The client.
+
+**Design Patterns:**
+
+A repeatable formalization that solves a particular problem encountered in the process of software engineering, operating as easily communicable and implementable templates in the process of application or system design. They offer a variety of benefits, from ease of extensibility to better adherence of Object Oriented Principles.
+
+**UI:**
+
+User Interface—the layout of visual elements with which a user interacts during system use.
+
+
+**UX:**
+
+User Experience—the experience a person has as they navigate a particular system; as opposed to the UI, the UX is more of a subjective measure. A good UI does not necessarily ensure a good UX, and a sparse UI does not necessarily lead to a bad UX, though surely the two are linked.
+
+**Factory Design Pattern:**
+
+The Factory design pattern is relatively simple. The developer creates an interface or abstract class for creating an object, but lets the subclasses (that inherit from that object) decide which class to instantiate. 
+To explain, you’d use the factory pattern when you want a method to return one of several possible classes that share a common superclass. Say you are making a game, and you want a random enemy to pop up on the screen. How would you do this? You’d create a random number generator, and each potential enemy class is assigned one of the numbers that could pop out of that random number generator. I can then send that number to the factory object, and it will return to me a dynamically created enemy and throw it on the screen. The whole point is that we want the ability to have classes chosen at runtime, and that’s what the factory pattern provides for us.
+So when would you use the factory pattern? When you don’t know ahead of time what you might need (make sure that all the potential classes are of the same subclass hierarchy). Looking at the UML diagram for this pattern, you can see that we look in the main() method for the user to ask the DishFactory class to create a specific dish for them (appetizer, entrée, or dessert). Using the getDish() method, the DishFactory creates one of those three options. Those three subclasses implement the superclass of Dish, which contains a makeTheFood() method. Therefore, when the DishFactory class creates one of the three Dish subclasses, they call the makeTheFood() method as well.
+
+**State Design Pattern:**
+
+The State Design Pattern consists of a Context (the thing that exists in one of several States) and a set of States (the situation a Context is currently in). It allows for a class instance to delegate its actions to its current State so that it operates exactly as it should at any particular point of its lifecycle. In other words, the same instance taking the same action while in different States would lead to different results, because the actual implementation of the action occurs within the State. In this system, the Context is the Patron class, which is any customer engaged in an interaction with the restaurant. Patrons can exist in one of seven States at a time depending on what stage of their dining experience they are currently in. This allows for each Patron to be treated the same way, and grants each Patron the same range of actions; however, depending on the particular state a Patron is in, the results of that action may be entirely different.
+	
+**Observer Design Pattern:** 
+
+Observer pattern is a popular behavioral design pattern that is often used to define a one to many dependency/relationship. The object known as the “subject” will maintain a list of “observers” which are the dependents. It is very similar in aspects to the Publisher-Subscriber pattern. When one object changes its “state,” all other objects will be notified of the change. In this particular case, the user is waiting for their entree, appetizer or dessert. The FoodSubject interface will check the status of the order from the Observer interface then notify the user. The Observer will update on the order and all the dependents (appetizer, dessert and entree) will change based upon what update it will give.
+
+**Decorator Design Pattern:** 
+
+The decorator pattern allows an existing object to receive new functionality without having to alter its structure. This is more efficient than using subclasses, because the behavior of an object can be expanded without having to define a new object. In the classes within Dishes and Toppings, the decorator pattern allows methods to be shared from the ThaiDish class. This also allows a Dish to be decorated with multiple Toppings if needed. The cost of the Dish and the Toppings are then calculated using inheritance. 
+
+**Singleton Design Pattern:**
+
+The singleton design pattern restricts instantiation of the class to only one instance or object while providing global access to it. It means once an object is created, that’s the only object. Any attempts to create another object will return the original object. It is used for things like logging, database connection, drivers objects, etc. In this project, it will be used to make a stopwatch that will show the time from an order is placed to when the order is ready to be served. 
+
 
 
 
