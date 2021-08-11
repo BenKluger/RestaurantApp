@@ -3,12 +3,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
     public class foodMessageTest {
      @Test
-        public getMessageContent(){
-         foodMessage foodmessage = new foodmessage();
+        void getMessageContent(){
+         foodMessage foodmessage = new foodMessage("Test");
 
          //The good input will lead to the message being received.
-         assertEquals(foodmessage.(this.messageContent), fOrder);
+         assertEquals("Test", foodmessage.getMessageContent());
 
-         assertEquals(foodmessage.(this.messageContent), dessert );
      }
 }
