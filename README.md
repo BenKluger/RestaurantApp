@@ -284,8 +284,8 @@ The system is designed to be highly extensible for future use, whether due to mo
 
 *For each design pattern, a central class was selected in which two methods were tested, once with expected input and once with unexpected (“bad”) input. All tests passed. Both good and bad input passed where applicable; otherwise, unit was simply tested for correctness.
 
-## State Design Pattern:
-*See file PatronTest.java for implementation.
+## State Design Pattern
+*See file PatronTest.java for implementation.*
 
 **Details:**
 
@@ -296,5 +296,46 @@ The system is designed to be highly extensible for future use, whether due to mo
 - Conducted unit test on placeOrder() method. Test passed.
 	- placeOrder(double price) was run on a positive price. Balance was observed to adjust accordingly.
 	- placeOrder(double price) was run on a negative price. Balance was observed to remain unchanged (no menu items are negatively priced).
+
+## Factory Design Pattern
+*See file DishFactoryTest.java for implementation.*
+
+**Details:**
+
+- Conducted unit test on getDish() method. Test passed.
+	- A new DishFactory object was created, and called the getDish() method while passing in “Appetizer” as a parameter. This was tested as a boolean (assuming true) to see if it was an instance of the Appetizer class. Test Passed, meaning that it is an instance of the Appetizer class.
+	- A new DishFactory object was created, and called the getDish() method while passing in “Appetizer” as a parameter. This was tested as a boolean to see if it was an instance of the Dessert class. Test Passed, meaning that it is NOT an instance of the Appetizer class.
+
+## Decorator Design Pattern
+*See file ToppingDecoratorTest.java for implementation.*
+
+**Details:**
+
+- Conducted unit test on price() method. Test passed.
+	- A new PadThai dish is created and assertEquals is used to check if the int for the price of the dish matches the expected value.
+- Conducted unit test on getItemName() method. Test passed.
+	- A new PadThai dish is created and assertEquals is used to check if the string for the name of the dish matches the expected string.
+
+## Observer Design Pattern
+*See file foodMessageTest for implementation.*
+
+**Details:**
+
+- Conducted unit test on getMessageContent() method. Test passed.
+	- assertEquals will check if the string input is correct for the message by seeing if they match. 
+
+- Conducted unit test on foodMessage() method. Test passed.
+	- assertEquals will check if the string input is correct for the message by seeing if they match for the fOrder.
+
+## Singleton Design Pattern
+*See file SingletonTests for implementation.*
+
+**Details:**
+
+- Conducted unit test on Stopwatch method. Test passed.
+	- Good input: assertSame(StopwatchObject1, StopwatchObject 2); two singleton objects must be point to the same object because they have global access to a single instance
+	- Bad input: assertNotSame(Customer1, Customer2); they are not singleton objects
+- Conducted unit test on getTime method. Test passed.
+	- Expected time (0m:0s) shouldn’t equals to what getTime() returns because from the time is initialized it continues running 
 
 
