@@ -219,6 +219,14 @@ The customers interact directly with the restaurant system. They make use of the
 
 ![image](https://user-images.githubusercontent.com/69221395/129107078-7ec44a00-2f51-499a-8f73-c0f71b1aac59.png)
 
+## 7.0 Platform Requirements Specification
+
+- The application should function on all up-to-date iOS and Android mobile devices. 
+- Internet service is required to connect to the restaurant server, which will be set up as well.
+- Integration into the current firmware of the restaurant’s Point of Sale (POS) software will also be required, and if this proves to be untenable, the POS software will need to be updated to a compatible version as well. 
+- Necessary languages include Java and Swift. 
+- Extending the application to a limited web application format is a project that will be undertaken in the future, and this will require the use of JavaScript.
+
 
 
 
