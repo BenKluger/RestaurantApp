@@ -1,3 +1,5 @@
+// This contains all the classes for the dishes
+
 class PadThai extends ThaiDish {
     public PadThai() {
         itemName = "Pad Thai";
