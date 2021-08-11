@@ -184,9 +184,40 @@ The system must interface with:
 ## 5.0 The Context Model:
 ## 5.1 Context Diagram
 
+![ContextDiagram](https://user-images.githubusercontent.com/69221395/129106889-fd611559-89d6-4537-b41f-f00954da3c56.png)
 
 
+## 5.2 System Externals
 
+**UberEats/DoorDash/Seamless:**
+
+Delivery apps for the customers to order remotely. Work related to such orders is not dealt within Molly’s Restaurant Hub, but is handed off to these services.
+
+**Square:**
+
+Cashier system that seamlessly integrates the customer’s billing with the restaurant’s system.
+
+**Accounting System:**
+
+All financial transactions of the restaurant will be carefully tracked to ensure the best possible outcome and customer experience. The system will analyze every processed balance, accounts receivable/payable, sales, etc.
+
+**Employee management system:**
+
+This system will keep track of the check in/check out information of the employees.
+
+**Customers:**
+
+The customers interact directly with the restaurant system. They make use of the delivery apps and/or the Square cashier system to purchase their product.
+
+## 6.0 The Use Case Model
+
+![image](https://user-images.githubusercontent.com/69221395/129106945-6a95f724-d1cb-4b2b-8c6c-1415397d68d4.png)
+
+![image](https://user-images.githubusercontent.com/69221395/129106982-d5ae87db-6ebb-42b8-857e-e1f577f75d84.png)
+
+![image](https://user-images.githubusercontent.com/69221395/129107053-2834e1c9-1d73-4a26-86e1-02d8a73467e1.png)
+
+![image](https://user-images.githubusercontent.com/69221395/129107078-7ec44a00-2f51-499a-8f73-c0f71b1aac59.png)
 
 
 
