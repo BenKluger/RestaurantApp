@@ -2,7 +2,7 @@
 Group project in 370.
 
 
-#Architecture and Design Document#
+# Architecture and Design Document #
 
 ######Introduction
 
