@@ -174,6 +174,16 @@ The system must interface with:
 - The main class has an end-to-end dependency relationship with the rest of the code, i.e., the implementation of the five design patterns (that is, the main class can be partially created prior to the completion of all five design patterns, but it cannot be completed until the rest of the code is finished).
 - The implementation of the JUnit tests has an end-to-end relationship with the corresponding tested classes (that is, though the coding of the tests can be done beforehand, as in TDD, it cannot be meaningfully completed until the exact classes under scrutiny are implemented and their method signatures are known; furthermore, the code will not compile before this point).
 
+## 4.3 Constraints
+
+- Project must be completed by August 11, 2021.
+- Group work must be conducted remotely utilizing tools such as GitHub, Discord, and Google Docs.
+- In-depth documentation including UML diagrams are required for each of the five design patterns.
+- All code must properly showcase a design pattern while relating to the context of a restaurant.
+
+## 5.0 The Context Model:
+## 5.1 Context Diagram
+
 
 
 
