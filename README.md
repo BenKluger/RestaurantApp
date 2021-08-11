@@ -211,13 +211,13 @@ The customers interact directly with the restaurant system. They make use of the
 
 ## 6.0 The Use Case Model
 
-![image](https://user-images.githubusercontent.com/69221395/129106945-6a95f724-d1cb-4b2b-8c6c-1415397d68d4.png)
+![image](https://user-images.githubusercontent.com/69221395/129107624-fcc5c642-95ff-421e-8ca0-ffa01181aca4.png)
 
-![image](https://user-images.githubusercontent.com/69221395/129106982-d5ae87db-6ebb-42b8-857e-e1f577f75d84.png)
+![image](https://user-images.githubusercontent.com/69221395/129107783-59f29320-76cf-47dd-af43-72e3f2563bba.png)
 
-![image](https://user-images.githubusercontent.com/69221395/129107053-2834e1c9-1d73-4a26-86e1-02d8a73467e1.png)
+![image](https://user-images.githubusercontent.com/69221395/129107709-01620a85-8761-4720-bdd4-d352083a9831.png)
 
-![image](https://user-images.githubusercontent.com/69221395/129107078-7ec44a00-2f51-499a-8f73-c0f71b1aac59.png)
+![image](https://user-images.githubusercontent.com/69221395/129107811-ae310aa6-94af-44aa-803d-bd6711b6ab88.png)
 
 ## 7.0 Platform Requirements Specification
 
