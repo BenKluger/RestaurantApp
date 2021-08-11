@@ -21,7 +21,7 @@ public class GroupProjectMain{
 
         // JOptionPane.showMessageDialog(null, "The customer's name is: " + customerName);
 
-        String customerOrder = JOptionPane.showInputDialog("Please enter the design pattern that you want to test. The choices are: Factory, State, ");
+        String customerOrder = JOptionPane.showInputDialog("Please enter the design pattern that you want to test. The choices are: Factory, State, Singleton, Observer, Decorator.");
 
 
         //Factory by Ben

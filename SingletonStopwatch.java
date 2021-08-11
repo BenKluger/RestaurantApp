@@ -1,5 +1,3 @@
-package classProject;
-
 import java.sql.Time;
 
 /*
