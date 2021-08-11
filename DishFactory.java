@@ -1,7 +1,3 @@
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
-
 /**
  * 
  */
@@ -24,15 +20,5 @@ public class DishFactory {
     
     return null;
  }
-
-@Test
-public void testGetDish(){
-
-   //This is the "good" input, will lead to the creation of a new appetizer dish
-   assertEquals(new Appetizer(), getDish("Appetizer"));
-
-   //This is the "Bad" input, will lead to a test failure
-   assertEquals(new Dessert(), getDish("Appetizer"));
-}
 
 }
