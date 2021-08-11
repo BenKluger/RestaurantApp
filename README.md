@@ -1,6 +1,35 @@
 # RestaurantApp
 Group project in 370.
 
+# Requirements Document
+
+## Introduction
+
+###### Purpose of Document
+Molly’s Restaurant Hub is an application designed to service the employees and patrons of Molly’s Restaurant, a high-end and well-frequented establishment that has been losing customers due to a lack of organization and slow wait times. The application is designed to create a more streamlined work environment for the employees of Molly’s Restaurant so that less mistakes are possible and that more effort goes towards customer service, and to allow customers to have a more seamless experience every step of the way, from placing reservations to tipping at the end of the night. This document outlines project scope, objectives, and requirements (functional and non-functional) and provides a route to implementation.
+
+###### Project Summary
+**Project Name:** Molly’s Restaurant Hub (MRH)
+**Project Manager:** Benjamin Kluger, CEO of 370 Inc.
+**Project Analysts:** -Kieun Bae, Analyst
+-Eyal Dalal, Analyst
+-Syed Hasib, Analyst
+-Momina Mim, Analyst
+-Mohab Taha, Analyst
+**Responsible Users:** Aryeh Greenberg, CEO of Molly’s Restaurant
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Architecture and Design Document #
 
@@ -35,5 +64,6 @@ The system is designed to be highly extensible for future use, whether due to mo
 
 ## Singleton Design Pattern
 ![Singleton Pattern UML Diagram](https://user-images.githubusercontent.com/69221395/129103372-5da1dff1-a619-42aa-b73c-0a3afc559b61.png)
+
 
 
