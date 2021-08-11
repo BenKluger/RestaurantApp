@@ -44,7 +44,7 @@ public class BannedState implements State {
         if (payment > patron.getBalance() * 1.5) {
             System.out.println("Well... we will unban you, just this once.");
             patron.adjustBalance(-1 * patron.getBalance());
-            patron.setState(patron.getNoReservationState());
+            StateController.changeState(patron,"NoReservation");
         }
         else
             System.out.println("That will not work. Please leave.");

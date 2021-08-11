@@ -39,7 +39,7 @@ public class OpenedBillState implements State {
     @Override
     public void askForBill(Patron patron) {
         System.out.println("Printing bill... Your balance is " + patron.getBalance());
-        patron.setState(patron.getBillPrintedState());
+        StateController.changeState(patron,"BillPrinted");
     }
 
     @Override
@@ -50,7 +50,7 @@ public class OpenedBillState implements State {
     @Override
     public void leave(Patron patron) {
         System.out.println("Dine and dash detected. Contacting police and issuing a lifetime ban.");
-        patron.setState(patron.getBannedState());
+        StateController.changeState(patron,"Banned");
     }
 
     @Override

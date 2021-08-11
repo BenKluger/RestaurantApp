@@ -28,7 +28,7 @@ public class MadeReservationState implements State {
     @Override
     public void talkToHost(Patron patron) {
         System.out.println("Welcome! The host will show you to your table.");
-        patron.setState(patron.getSeatedState());
+        StateController.changeState(patron,"Seated");
     }
 
     @Override
@@ -49,7 +49,7 @@ public class MadeReservationState implements State {
     @Override
     public void leave(Patron patron) {
         System.out.println("Have a good day. Your reservation has been cancelled.");
-        patron.setState(patron.getNoReservationState());
+        StateController.changeState(patron,"NoReservation");
     }
 
     @Override

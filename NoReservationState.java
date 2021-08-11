@@ -22,7 +22,7 @@ public class NoReservationState implements State {
     @Override
     public void makeReservation(Patron patron) {
         System.out.println("Reservation confirmed! Please talk to the host to be seated.");
-        patron.setState(patron.getMadeReservationState());
+        StateController.changeState(patron,"MadeReservation");
     }
 
     @Override

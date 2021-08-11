@@ -6,7 +6,6 @@
  * @author Eyal Dalal
  */
 
- /*
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -40,4 +39,4 @@ class PatronTest {
         patron.placeOrder(-10.00); //no menu item is negatively priced; should reject
         assertEquals(0.00, patron.getBalance());
     }
-}*/
+}

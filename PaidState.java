@@ -23,7 +23,7 @@ public class PaidState implements State {
     @Override
     public void makeReservation(Patron patron) {
         System.out.println("Another reservation already? OK, reservation confirmed.");
-        patron.setState(patron.getMadeReservationState());
+        StateController.changeState(patron,"MadeReservation");
     }
 
     @Override
@@ -36,7 +36,7 @@ public class PaidState implements State {
         System.out.println("Not ready to go yet? No worries. New bill opened.");
         patron.adjustBalance(3.00); //new bill means new service fee
         patron.adjustBalance(price);
-        patron.setState(patron.getOpenedBillState());
+        StateController.changeState(patron,"OpenedBill");
     }
 
     @Override
@@ -52,7 +52,7 @@ public class PaidState implements State {
     @Override
     public void leave(Patron patron) {
         System.out.println("Thank you for dining with us. Come back soon!");
-        patron.setState(patron.getNoReservationState());
+        StateController.changeState(patron,"NoReservation");
     }
 
     @Override

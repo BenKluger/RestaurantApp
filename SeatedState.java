@@ -34,7 +34,7 @@ public class SeatedState implements State {
         System.out.println("Coming right up!");
         patron.adjustBalance(3.00); //all new bills incur an automatic $3.00 service fee
         patron.adjustBalance(price);
-        patron.setState(patron.getOpenedBillState());
+        StateController.changeState(patron,"OpenedBill");
     }
 
     @Override
@@ -50,7 +50,7 @@ public class SeatedState implements State {
     @Override
     public void leave(Patron patron) {
         System.out.println("Have a good day. Your table has been given up and your reservation is cancelled.");
-        patron.setState(patron.getNoReservationState());
+        StateController.changeState(patron,"NoReservation");
     }
 
     @Override

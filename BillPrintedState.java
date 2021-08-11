@@ -33,7 +33,7 @@ public class BillPrintedState implements State{
     @Override
     public void placeOrder(Patron patron, double price) {
         System.out.println("Changed your mind? No worries, we will reopen your bill.");
-        patron.setState(patron.getOpenedBillState());
+        StateController.changeState(patron,"OpenedBill");
         patron.placeOrder(price);
     }
 
@@ -51,19 +51,19 @@ public class BillPrintedState implements State{
             System.out.println("Your remaining balance is $" + currentBal + ".");
         else if (currentBal == 0) {
             patron.adjustBalance(-1 * patron.getBalance());
-            patron.setState(patron.getPaidState());
+            StateController.changeState(patron,"Paid");
         }
         else {
             patron.adjustBalance(-1 * patron.getBalance());
             System.out.println("Thank you for your generous tip.");
-            patron.setState(patron.getPaidState());
+            StateController.changeState(patron,"Paid");
         }
     }
 
     @Override
     public void leave(Patron patron) {
         System.out.println("Dine and dash detected. Contacting police and issuing a lifetime ban.");
-        patron.setState(patron.getBannedState());
+        StateController.changeState(patron,"Banned");
     }
 
     @Override
