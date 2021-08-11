@@ -5,10 +5,10 @@ Group project in 370.
 
 ## 1 Introduction
 
-###### 1.1 Purpose of Document
+## 1.1 Purpose of Document
 Molly’s Restaurant Hub is an application designed to service the employees and patrons of Molly’s Restaurant, a high-end and well-frequented establishment that has been losing customers due to a lack of organization and slow wait times. The application is designed to create a more streamlined work environment for the employees of Molly’s Restaurant so that less mistakes are possible and that more effort goes towards customer service, and to allow customers to have a more seamless experience every step of the way, from placing reservations to tipping at the end of the night. This document outlines project scope, objectives, and requirements (functional and non-functional) and provides a route to implementation.
 
-###### 1.2 Project Summary
+## 1.2 Project Summary
 **Project Name:** Molly’s Restaurant Hub (MRH)
 
 **Project Manager:** Benjamin Kluger, CEO of 370 Inc.
@@ -22,19 +22,19 @@ Molly’s Restaurant Hub is an application designed to service the employees and
 
 **Responsible Users:** Aryeh Greenberg, CEO of Molly’s Restaurant
 
-###### 1.3 Background 
+## 1.3 Background 
 Molly’s Restaurant is a world-renowned, three Michelin star restaurant with its main location in Times Square, NYC. It has four more locations situated in other major US cities. Its typical clientele consists of wealthy tourists and natives looking for a high-end culinary experience complete with irreproachable service. Recent polls and focus groups have noted a marked decline in customer satisfaction, which is putting the restaurant’s reputation on the line. An emergency meeting of shareholders has determined that the fundamental structure of the dining experience for customers must be changed at once, and that the systems utilized by employees must be modernized. Molly’s Restaurant has been around since the 20th century and has not kept up with the times; reservations are handled by phone, on-duty managers have to utilize a physical keycard to issue refunds, and the kitchen receives illegible handwritten orders, to name just a few issues. 
 
 As such, Aryeh Greenberg, the new CEO of Molly’s Restaurant, has taken the executive decision to rework the entire system from the ground up, and center it on a mobile application to be utilized on both ends—both from the consumer side and the business’ side. The application should allow the restaurant to continue providing the stable, reliable, high-end experience for which it is known.
 
-###### 1.4 Project Scope
+## 1.4 Project Scope
 The scope of this project is a mobile-based application to be utilized by customers and employees (including hosts, servers, and kitchen staff). Limited functionality is available via a web-based application for those customers who do not wish to download the fully functional application. 
 
 The existing website will be replaced by the new web application. The phoneline-based reservation system will be discontinued in favor of the modernized approach. 
 
 Not included in this project is the exact implementation of the web application—that part will need to be extrapolated from the mobile application after its completion, as a separate project.
 
-###### 1.5 System Purpose
+## 1.5 System Purpose
 **Users:** 
 Those who will primarily benefit from the new system and those who will be affected by the new system include
 
@@ -60,7 +60,7 @@ Shareholders will benefit from reduced expenditures and losses.
 
 
 
-###### 1.6 Definitions and Acronyms
+## 1.6 Definitions and Acronyms
 **MRH:**
 
 Molly’s Restaurant Hub; the mobile application being developed.
@@ -76,7 +76,6 @@ A repeatable formalization that solves a particular problem encountered in the p
 **UI:**
 
 User Interface—the layout of visual elements with which a user interacts during system use.
-
 
 **UX:**
 
