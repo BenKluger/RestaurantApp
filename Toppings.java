@@ -1,6 +1,6 @@
 class Tofu extends ToppingDecorator {
-    MainDish tofu;
-    public Tofu(MainDish tofu) {
+    ThaiDish tofu;
+    public Tofu(ThaiDish tofu) {
         this.tofu = tofu;
     }
     public String getItemName() {
@@ -12,8 +12,8 @@ class Tofu extends ToppingDecorator {
 }
 
 class Chicken extends ToppingDecorator {
-    MainDish chicken;
-    public Chicken(MainDish chicken) {
+    ThaiDish chicken;
+    public Chicken(ThaiDish chicken) {
         this.chicken = chicken;
     }
     public String getItemName() {
@@ -25,8 +25,8 @@ class Chicken extends ToppingDecorator {
 }
 
 class Beef extends ToppingDecorator {
-    MainDish beef;
-    public Beef(MainDish beef) {
+    ThaiDish beef;
+    public Beef(ThaiDish beef) {
         this.beef = beef;
     }
     public String getItemName() {
@@ -38,8 +38,8 @@ class Beef extends ToppingDecorator {
 }
 
 class Pork extends ToppingDecorator {
-    MainDish pork;
-    public Pork(MainDish pork) {
+    ThaiDish pork;
+    public Pork(ThaiDish pork) {
         this.pork = pork;
     }
     public String getItemName() {
@@ -51,8 +51,8 @@ class Pork extends ToppingDecorator {
 }
 
 class Shrimp extends ToppingDecorator {
-    MainDish shrimp;
-    public Shrimp(MainDish shrimp) {
+    ThaiDish shrimp;
+    public Shrimp(ThaiDish shrimp) {
         this.shrimp = shrimp;
     }
     public String getItemName() {
@@ -64,8 +64,8 @@ class Shrimp extends ToppingDecorator {
 }
 
 class Duck extends ToppingDecorator {
-    MainDish duck;
-    public Duck(MainDish duck) {
+    ThaiDish duck;
+    public Duck(ThaiDish duck) {
         this.duck = duck;
     }
     public String getItemName() {

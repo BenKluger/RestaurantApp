@@ -100,12 +100,12 @@ public class GroupProjectMain{
         else if (customerOrder.equalsIgnoreCase("decorator")){
             System.out.println("You have chosen the decorator pattern.");
 
-            MainDish dish1 = new PadThai();
-            MainDish dish2 = new DrunkenNoodles();
-            MainDish dish3 = new PeanutNoodles();
-            MainDish dish4 = new BasilRice();
-            MainDish dish5 = new PineappleRice();
-            MainDish dish6 = new MassamanCurry();
+            ThaiDish dish1 = new PadThai();
+            ThaiDish dish2 = new DrunkenNoodles();
+            ThaiDish dish3 = new PeanutNoodles();
+            ThaiDish dish4 = new BasilRice();
+            ThaiDish dish5 = new PineappleRice();
+            ThaiDish dish6 = new MassamanCurry();
 
             int option = 0;
 
@@ -129,37 +129,37 @@ public class GroupProjectMain{
                 case 1:
                     System.out.println("You have selected ");
                     dish1 = new Chicken(dish1);
-                    System.out.println(dish1.getItemName() + "\nOrder Total: " + dish1.price());
+                    System.out.println(dish1.getItemName() + "\nOrder Total: $" + dish1.price());
                     break;
 
                 case 2:
                     System.out.println("You have selected ");
                     dish2 = new Beef(dish2);
-                    System.out.println(dish2.getItemName() + "\nOrder Total: " + dish2.price());
+                    System.out.println(dish2.getItemName() + "\nOrder Total: $" + dish2.price());
                     break;
 
                 case 3:
                     System.out.println("You have selected ");
                     dish3 = new Tofu(dish3);
-                    System.out.println(dish3.getItemName() + "\nOrder Total: " + dish3.price());
+                    System.out.println(dish3.getItemName() + "\nOrder Total: $" + dish3.price());
                     break;
 
                 case 4:
                     System.out.println("You have selected ");
                     dish4 = new Pork(dish4);
-                    System.out.println(dish4.getItemName() + "\nOrder Total: " + dish4.price());
+                    System.out.println(dish4.getItemName() + "\nOrder Total: $" + dish4.price());
                     break;
 
                 case 5:
                     System.out.println("You have selected ");
                     dish5 = new Shrimp(dish5);
-                    System.out.println(dish5.getItemName() + "\nOrder Total: " + dish5.price());
+                    System.out.println(dish5.getItemName() + "\nOrder Total: $" + dish5.price());
                     break;
 
                 case 6:
                     System.out.println("You have selected ");
                     dish6 = new Duck(dish6);
-                    System.out.println(dish6.getItemName() + "\nOrder Total: " + dish6.price());
+                    System.out.println(dish6.getItemName() + "\nOrder Total: $" + dish6.price());
                     break;
 
                 default:

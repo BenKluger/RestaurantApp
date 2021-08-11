@@ -1,4 +1,4 @@
-class PadThai extends MainDish {
+class PadThai extends ThaiDish {
     public PadThai() {
         itemName = "Pad Thai";
     }
@@ -8,7 +8,7 @@ class PadThai extends MainDish {
     }
 
 
-class DrunkenNoodles extends MainDish {
+class DrunkenNoodles extends ThaiDish {
     public DrunkenNoodles() {
         itemName = "Drunken Noodles";
     }
@@ -18,7 +18,7 @@ class DrunkenNoodles extends MainDish {
     }
 
 
-class PeanutNoodles extends MainDish {
+class PeanutNoodles extends ThaiDish {
     public PeanutNoodles() {
         itemName = "Peanut Noodles";
     }
@@ -28,7 +28,7 @@ class PeanutNoodles extends MainDish {
     }
 
 
-class BasilRice extends MainDish {
+class BasilRice extends ThaiDish {
     public BasilRice() {
         itemName = "Fried Rice";
     }
@@ -38,7 +38,7 @@ class BasilRice extends MainDish {
     }
 
 
-class PineappleRice extends MainDish {
+class PineappleRice extends ThaiDish {
     public PineappleRice() {
         itemName = "Pineapple Fried Rice";
     }
@@ -48,7 +48,7 @@ class PineappleRice extends MainDish {
     }
 
 
-class MassamanCurry extends MainDish {
+class MassamanCurry extends ThaiDish {
     public MassamanCurry() {
         itemName = "Massaman Curry";
     }
