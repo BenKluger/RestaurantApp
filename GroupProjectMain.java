@@ -53,6 +53,7 @@ public class GroupProjectMain{
 
         //Singleton by Momina
         else if (customerOrder.equalsIgnoreCase("singleton")){
+            System.out.println("You have chosen the singleton pattern.");
             CustomerSingleton customer = new CustomerSingleton();
             ChefSingleton chef = new ChefSingleton();
             //Ordering
