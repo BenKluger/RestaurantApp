@@ -38,7 +38,7 @@ public class OpenedBillState implements State {
 
     @Override
     public void askForBill(Patron patron) {
-        System.out.println("Printing bill... Your balance is " + patron.getBalance());
+        System.out.println("Printing bill... Your balance is $" + patron.getBalance() + "\n($3.00 service fee included).");
         StateController.changeState(patron,"BillPrinted");
     }
 
