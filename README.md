@@ -280,4 +280,21 @@ The system is designed to be highly extensible for future use, whether due to mo
 ![Singleton Pattern UML Diagram](https://user-images.githubusercontent.com/69221395/129103372-5da1dff1-a619-42aa-b73c-0a3afc559b61.png)
 
 
+# Testing Document
+
+*For each design pattern, a central class was selected in which two methods were tested, once with expected input and once with unexpected (“bad”) input. All tests passed. Both good and bad input passed where applicable; otherwise, unit was simply tested for correctness.
+
+## State Design Pattern:
+*See file PatronTest.java for implementation.
+
+**Details:**
+
+- Conducted unit test on makeReservation() method. Test passed.
+	- makeReservation() was run for a Patron in NoReservationState. Correct State transition to MadeReservationState was observed.
+	- makeReservation() was run for a Patron in SeatedState - an improper action for a Patron to take, given they are already seated. No State transitions were undertaken, demonstrating proper functioning under bad input.
+
+- Conducted unit test on placeOrder() method. Test passed.
+	- placeOrder(double price) was run on a positive price. Balance was observed to adjust accordingly.
+	- placeOrder(double price) was run on a negative price. Balance was observed to remain unchanged (no menu items are negatively priced).
+
 
