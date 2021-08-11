@@ -3,7 +3,7 @@ Group project in 370.
 
 # Requirements Document
 
-## 1 Introduction
+## 1.0 Introduction
 
 ## 1.1 Purpose of Document
 Molly’s Restaurant Hub is an application designed to service the employees and patrons of Molly’s Restaurant, a high-end and well-frequented establishment that has been losing customers due to a lack of organization and slow wait times. The application is designed to create a more streamlined work environment for the employees of Molly’s Restaurant so that less mistakes are possible and that more effort goes towards customer service, and to allow customers to have a more seamless experience every step of the way, from placing reservations to tipping at the end of the night. This document outlines project scope, objectives, and requirements (functional and non-functional) and provides a route to implementation.
@@ -36,6 +36,7 @@ Not included in this project is the exact implementation of the web application�
 
 ## 1.5 System Purpose
 **Users:** 
+
 Those who will primarily benefit from the new system and those who will be affected by the new system include
 
 **Customers:**
