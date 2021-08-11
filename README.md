@@ -23,7 +23,7 @@ The system is designed to be highly extensible for future use, whether due to mo
 
 ### **State Design Pattern. UML Diagram:**
 ![Copy of UML - State Pattern](https://user-images.githubusercontent.com/69221395/129102457-1845b925-e8d6-4b7c-ab1b-c1d4bf6eb18c.jpg)
-![Copy of UML - State Pattern](https://user-images.githubusercontent.com/69221395/129102491-b649ac18-e6ce-4bf2-853f-1cb95b83fca0.jpg)
+![State Diagram - State Pattern](https://user-images.githubusercontent.com/69221395/129102945-9cf516ba-23c3-4aa8-84db-b394a5bd64ab.jpg)
 
 
 
