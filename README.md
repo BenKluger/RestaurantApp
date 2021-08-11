@@ -21,11 +21,14 @@ The system is designed to be highly extensible for future use, whether due to mo
 ## **Design Models**
 
 
-## **State Design Pattern. UML Diagram:**
+## **State Design Pattern.**
 ![Copy of UML - State Pattern](https://user-images.githubusercontent.com/69221395/129102457-1845b925-e8d6-4b7c-ab1b-c1d4bf6eb18c.jpg)
 ![State Diagram - State Pattern](https://user-images.githubusercontent.com/69221395/129102945-9cf516ba-23c3-4aa8-84db-b394a5bd64ab.jpg)
 
 
+##Factory Design Pattern
+![UML Diagram Factory](https://user-images.githubusercontent.com/69221395/129103113-8d2dac34-33bc-491d-bd67-3e88f1f4d1d2.png)
 
-
+##Decorator Design Pattern
+<img width="920" alt="Decorator UML" src="https://user-images.githubusercontent.com/69221395/129103157-2af5e29a-9f37-4514-a577-7cb7ceb9f373.png">
 
