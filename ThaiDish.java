@@ -1,6 +1,6 @@
 abstract class ThaiDish{
     public abstract int price();
-    String itemName = "Dish";
+    String itemName;
     public String getItemName() {
         return itemName;
     }
