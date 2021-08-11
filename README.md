@@ -35,23 +35,28 @@ The existing website will be replaced by the new web application. The phoneline-
 Not included in this project is the exact implementation of the web application—that part will need to be extrapolated from the mobile application after its completion, as a separate project.
 
 ###### 1.5 System Purpose
-Users: Those who will primarily benefit from the new system and those who will be affected by the new system include
+Users: 
+Those who will primarily benefit from the new system and those who will be affected by the new system include
 
 Customers:
-	Upon implementation of the new system, customers will find app navigation,
-product identification (which meal they want) and product ordering easier. Customers will be able to choose what toppings they want as well.
+	
+Upon implementation of the new system, customers will find app navigation, product identification (which meal they want) and product ordering easier. Customers will be able to choose what toppings they want as well.
 
 Hosts:
+
 The hosts will have the ability to view their customer’s orders as well as their position in the ordering process.
 
 Wait Staff:
+
 Wait staff will not be spread so thin, as customers will now have the option to order via application as well. Sending orders to the kitchen will also become a more streamlined operation in which less errors will arise. 
 
 Kitchen Staff:
+
 The new system should reduce the workload of the kitchen staff as kitchen staff members are able to find the information they need from the application. The staff will be better able to send out their dishes on time, accordingly. 
 
 Shareholders:
-	Shareholders will benefit from reduced expenditures and losses.
+
+Shareholders will benefit from reduced expenditures and losses.
 
 
 
