@@ -104,6 +104,23 @@ The decorator pattern allows an existing object to receive new functionality wit
 
 The singleton design pattern restricts instantiation of the class to only one instance or object while providing global access to it. It means once an object is created, that’s the only object. Any attempts to create another object will return the original object. It is used for things like logging, database connection, drivers objects, etc. In this project, it will be used to make a stopwatch that will show the time from an order is placed to when the order is ready to be served. 
 
+## 1.7 Software Specification
+
+The system will be implemented as a five-branched program wherein a user selects one of five sub-systems, each implemented using a different design pattern. Object oriented principles will be utilized, and discrete classes will be written to exist in as decoupled a manner as possible. It will be coded using Java. 
+
+The main class will contain a main method, in which the original choice of design pattern to be demonstrated is made through a GUI popup. Each design pattern will be represented as an option, and will have corresponding driver code within the main method that demonstrates the capabilities of that particular pattern in the context of a restaurant application. The demonstrations will be printed in the console and may require user interaction if it benefits the demonstration. 
+
+After the demonstration is completed, a thank you screen is output to the console and the program terminates. To view another design pattern in action, the program must be restarted. The code is written in such a way that future decisions to integrate the various components of the system will be possible, although that remains for a project of larger scope than the current one.
+
+##2.0 Functional Objectives
+
+* The system shall restructure order input so that all orders are filtered by a particular dish type. This will organize the ordering process and ensure consistency across the restaurant’s locations and between each order. Incorrect output from the kitchen will be reduced by 20%.
+* The system shall allow for reservations by mobile application. This will simplify the reservation process and will encourage repeat customers to download the mobile application, increasing brand loyalty. Customer retention rate will rise by 15% and time needed to place a reservation will be cut in half.
+* The system shall automatically catch and ban patrons who leave without paying. This will disincentivize dining and dashing and will provide employees more time to better serve their customers. Preventable losses will be reduced by 30%. Employee and customer satisfaction will both rate higher.
+* The system shall allow ordering and payment via application. This will allow for a speedier experience for those customers who choose to utilize this option. Customer wait times will be reduced by 60%. Customer turnaround will be increased by 30%.
+* The system will allow faster processing of orders to the kitchen staff due to status updates of the meals being made. The user will be able to see the progress of their orders and see when the dish request is received by the restaurant and is ready to be served, and the waiters will know when and where to deliver the dish.
+* The system displays the time since the order was made on a screen for the kitchen staff to use, so they have a time frame and can prepare the order as quickly as possible to reduce the wait time between an order being placed and being ready. This will lead to an increase in customer satisfaction rate. 
+* The system will allow for more customization of entrees ordered through the app, leading to more versatility in what is offered to the customer.
 
 
 
