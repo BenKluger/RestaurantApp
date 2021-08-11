@@ -284,7 +284,8 @@ The system is designed to be highly extensible for future use, whether due to mo
 
 *For each design pattern, a central class was selected in which two methods were tested, once with expected input and once with unexpected (“bad”) input. All tests passed. Both good and bad input passed where applicable; otherwise, unit was simply tested for correctness.
 
-## State Design Pattern
+## 1.0 Design Patterns
+## 1.1 State Design Pattern
 *See file PatronTest.java for implementation.*
 
 **Details:**
@@ -297,7 +298,7 @@ The system is designed to be highly extensible for future use, whether due to mo
 	- placeOrder(double price) was run on a positive price. Balance was observed to adjust accordingly.
 	- placeOrder(double price) was run on a negative price. Balance was observed to remain unchanged (no menu items are negatively priced).
 
-## Factory Design Pattern
+## 1.2 Factory Design Pattern
 *See file DishFactoryTest.java for implementation.*
 
 **Details:**
@@ -306,7 +307,7 @@ The system is designed to be highly extensible for future use, whether due to mo
 	- A new DishFactory object was created, and called the getDish() method while passing in “Appetizer” as a parameter. This was tested as a boolean (assuming true) to see if it was an instance of the Appetizer class. Test Passed, meaning that it is an instance of the Appetizer class.
 	- A new DishFactory object was created, and called the getDish() method while passing in “Appetizer” as a parameter. This was tested as a boolean to see if it was an instance of the Dessert class. Test Passed, meaning that it is NOT an instance of the Appetizer class.
 
-## Decorator Design Pattern
+## 1.3 Decorator Design Pattern
 *See file ToppingDecoratorTest.java for implementation.*
 
 **Details:**
@@ -316,7 +317,7 @@ The system is designed to be highly extensible for future use, whether due to mo
 - Conducted unit test on getItemName() method. Test passed.
 	- A new PadThai dish is created and assertEquals is used to check if the string for the name of the dish matches the expected string.
 
-## Observer Design Pattern
+## 1.4 Observer Design Pattern
 *See file foodMessageTest for implementation.*
 
 **Details:**
@@ -327,7 +328,7 @@ The system is designed to be highly extensible for future use, whether due to mo
 - Conducted unit test on foodMessage() method. Test passed.
 	- assertEquals will check if the string input is correct for the message by seeing if they match for the fOrder.
 
-## Singleton Design Pattern
+## 1.5 Singleton Design Pattern
 *See file SingletonTests for implementation.*
 
 **Details:**
@@ -338,4 +339,26 @@ The system is designed to be highly extensible for future use, whether due to mo
 - Conducted unit test on getTime method. Test passed.
 	- Expected time (0m:0s) shouldn’t equals to what getTime() returns because from the time is initialized it continues running 
 
+## 2.0 Component Tests
 
+*Each of the following component tests demonstrates proper operation of an entire design pattern when a user (or a system-simulated user) performs a particular action.*
+
+## 2.1 State Design Pattern
+A Patron presses “Place Order” on their application. The exact action is delegated to the Patron’s current State and the application behaves appropriately as pertains to this particular Patron.
+
+## 2.2 Factory Design Pattern
+A dish order is created among the three options (appetizer, entree, or dessert), and the correct dish is created for the customer according to their specifications.
+
+## 2.3 Decorator Design Pattern
+Once a user selects an entree from the six dishes available, they are asked to select the topping of their choice, and the total cost is calculated for their selection. 
+
+## 2.4 Observer Design Pattern
+After an order is made, it will be sent to the appetizer, entree and dessert sections then the user is notified that their order has been received by the restaurant. The meal statuses will be updated when it will be ready to serve.
+
+## 2.5 Singleton Design Pattern
+Once a customer places an order, the stopwatch starts ticking until the order is ready to be served. It displays the time elapsed between the order placed by the customer and prepared by the chef. 
+
+
+
+
+Thank you for checking out our project!
