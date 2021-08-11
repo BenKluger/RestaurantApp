@@ -122,6 +122,58 @@ After the demonstration is completed, a thank you screen is output to the consol
 6. The system displays the time since the order was made on a screen for the kitchen staff to use, so they have a time frame and can prepare the order as quickly as possible to reduce the wait time between an order being placed and being ready. This will lead to an increase in customer satisfaction rate. 
 7. The system will allow for more customization of entrees ordered through the app, leading to more versatility in what is offered to the customer.
 
+## 3.0 Non-Functional Objectives:
+
+## 3.1 Security
+
+- The system shall properly protect all sensitive user information including, but not limited to, credit card information, address, username and password.
+- Location data shall be utilized only to determine whether a customer is in one of two states: “In Restaurant” and “Away”. Specific user location will never be logged unless utilized for delivery.
+- All data shall be encrypted.
+- Users who create accounts will have the following password restrictions: 10-character minimum, use of at least one capital and one lowercase letter, use of at least one symbol, and use of at least one number.
+
+## 3.2 Performance
+
+- The system shall support 3000 simultaneous users (combined max capacities across all five locations multiplied by 5—this provides adequate leeway for “Away” state customers simply placing orders and future reservations through the application).
+- “Support” is defined as delivering on functionalities within 5 seconds of an interaction in the worst case.
+
+## 3.3 Reliability
+
+- The system shall be completely operational at least 95% of the time.
+- Down time after a failure shall not exceed 1 hour.
+
+## 3.4 Supportability
+
+- The system shall be able to accommodate changes to the menu without major reengineering.
+- The mobile application shall be easily translatable to a limited-functionality web application.
+
+## 3.5 Usability
+
+- The system shall have an easily navigable UI and promote a simple, friendly, and intuitive UX.
+- There should be absolutely no learning curve necessary. This will be achieved by utilizing similar design standards and visual cues as those used by other modern applications. 
+- App Store ratings must remain at 4 stars or above; if dipping below this benchmark, the UI must be reworked.
+
+## 3.6 Interfaces
+
+The system must interface with: 
+- The current accounting system utilized by Molly’s Restaurant.
+- The current employee management system utilized by Molly’s Restaurant.
+- UberEats and DoorDash, where available.
+
+## 4.0 Assumptions, Dependancies, and Constraints:
+
+## 4.1 Assumptions
+
+- All team members will be readily reachable and are capable of completing their delegated tasks in a timely manner.
+- Budget will be no issue, as the costs of development are nonexistent for this project.
+- The given deadline of August 11, 2021 is an achievable one.
+- The use of tools such as GitHub, Discord, and Google Docs will create an efficient and collaborative environment, such that remote group work will not be an issue.
+
+## 4.2 Dependencies 
+
+- Each of the five design patterns has an end-to-start dependency relationship with its corresponding driver code in the main class (that is, the driver code cannot be meaningfully written until the design pattern it tests is completed).
+- The main class has an end-to-end dependency relationship with the rest of the code, i.e., the implementation of the five design patterns (that is, the main class can be partially created prior to the completion of all five design patterns, but it cannot be completed until the rest of the code is finished).
+- The implementation of the JUnit tests has an end-to-end relationship with the corresponding tested classes (that is, though the coding of the tests can be done beforehand, as in TDD, it cannot be meaningfully completed until the exact classes under scrutiny are implemented and their method signatures are known; furthermore, the code will not compile before this point).
+
 
 
 
