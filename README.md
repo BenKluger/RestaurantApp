@@ -112,15 +112,15 @@ The main class will contain a main method, in which the original choice of desig
 
 After the demonstration is completed, a thank you screen is output to the console and the program terminates. To view another design pattern in action, the program must be restarted. The code is written in such a way that future decisions to integrate the various components of the system will be possible, although that remains for a project of larger scope than the current one.
 
-##2.0 Functional Objectives
+## 2.0 Functional Objectives
 
-* The system shall restructure order input so that all orders are filtered by a particular dish type. This will organize the ordering process and ensure consistency across the restaurant’s locations and between each order. Incorrect output from the kitchen will be reduced by 20%.
-* The system shall allow for reservations by mobile application. This will simplify the reservation process and will encourage repeat customers to download the mobile application, increasing brand loyalty. Customer retention rate will rise by 15% and time needed to place a reservation will be cut in half.
-* The system shall automatically catch and ban patrons who leave without paying. This will disincentivize dining and dashing and will provide employees more time to better serve their customers. Preventable losses will be reduced by 30%. Employee and customer satisfaction will both rate higher.
-* The system shall allow ordering and payment via application. This will allow for a speedier experience for those customers who choose to utilize this option. Customer wait times will be reduced by 60%. Customer turnaround will be increased by 30%.
-* The system will allow faster processing of orders to the kitchen staff due to status updates of the meals being made. The user will be able to see the progress of their orders and see when the dish request is received by the restaurant and is ready to be served, and the waiters will know when and where to deliver the dish.
-* The system displays the time since the order was made on a screen for the kitchen staff to use, so they have a time frame and can prepare the order as quickly as possible to reduce the wait time between an order being placed and being ready. This will lead to an increase in customer satisfaction rate. 
-* The system will allow for more customization of entrees ordered through the app, leading to more versatility in what is offered to the customer.
+1. The system shall restructure order input so that all orders are filtered by a particular dish type. This will organize the ordering process and ensure consistency across the restaurant’s locations and between each order. Incorrect output from the kitchen will be reduced by 20%.
+2. The system shall allow for reservations by mobile application. This will simplify the reservation process and will encourage repeat customers to download the mobile application, increasing brand loyalty. Customer retention rate will rise by 15% and time needed to place a reservation will be cut in half.
+3. The system shall automatically catch and ban patrons who leave without paying. This will disincentivize dining and dashing and will provide employees more time to better serve their customers. Preventable losses will be reduced by 30%. Employee and customer satisfaction will both rate higher.
+4. The system shall allow ordering and payment via application. This will allow for a speedier experience for those customers who choose to utilize this option. Customer wait times will be reduced by 60%. Customer turnaround will be increased by 30%.
+5. The system will allow faster processing of orders to the kitchen staff due to status updates of the meals being made. The user will be able to see the progress of their orders and see when the dish request is received by the restaurant and is ready to be served, and the waiters will know when and where to deliver the dish.
+6. The system displays the time since the order was made on a screen for the kitchen staff to use, so they have a time frame and can prepare the order as quickly as possible to reduce the wait time between an order being placed and being ready. This will lead to an increase in customer satisfaction rate. 
+7. The system will allow for more customization of entrees ordered through the app, leading to more versatility in what is offered to the customer.
 
 
 
