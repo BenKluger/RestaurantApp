@@ -32,3 +32,10 @@ The system is designed to be highly extensible for future use, whether due to mo
 ## Decorator Design Pattern
 <img width="920" alt="Decorator UML" src="https://user-images.githubusercontent.com/69221395/129103157-2af5e29a-9f37-4514-a577-7cb7ceb9f373.png">
 
+## Observer Design Pattern
+<img width="946" alt="Observer UML Diagram" src="https://user-images.githubusercontent.com/69221395/129103340-3269ac23-bda8-48da-a28e-2a71e4c6391d.png">
+
+## Singleton Design Pattern
+![Singleton Pattern UML Diagram](https://user-images.githubusercontent.com/69221395/129103372-5da1dff1-a619-42aa-b73c-0a3afc559b61.png)
+
+
