@@ -53,16 +53,15 @@ public class GroupProjectMain{
 
         //Singleton by Momina
         else if (customerOrder.equalsIgnoreCase("singleton")){
-            System.out.println("You have chosen the singleton pattern.");
+            CustomerSingleton customer = new CustomerSingleton();
+            ChefSingleton chef = new ChefSingleton();
+            //Ordering
+            customer.placeOrder();
+            //Stop watch starts
             SingletonStopwatch stopwatch = SingletonStopwatch.Stopwatch();
-
-            System.out.println("Ordering Items.");
-            try {
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("Order Ready.");
+            //preparing the order
+            chef.prepareOrder();
+            //printing the time elapsed
             System.out.println(stopwatch.getTime());
 
         }
