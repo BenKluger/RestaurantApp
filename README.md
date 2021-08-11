@@ -14,11 +14,11 @@ Molly’s Restaurant Hub is an application designed to service the employees and
 **Project Manager:** Benjamin Kluger, CEO of 370 Inc.
 
 **Project Analysts:** 
--Kieun Bae, Analyst
--Eyal Dalal, Analyst
--Syed Hasib, Analyst
--Momina Mim, Analyst
--Mohab Taha, Analyst
+- Kieun Bae, Analyst
+- Eyal Dalal, Analyst
+- Syed Hasib, Analyst
+- Momina Mim, Analyst
+- Mohab Taha, Analyst
 
 **Responsible Users:** Aryeh Greenberg, CEO of Molly’s Restaurant
 
