@@ -240,8 +240,7 @@ public class GroupProjectMain{
         }
 
 
-        System.out.println();
-        System.out.println("--------------------");
+        System.out.println("\n--------------------");
         System.out.println("-----Thank you!-----");
         System.out.println("--Have a nice day!--");
         System.out.println("--------------------");
